@@ -1,0 +1,11 @@
+<h1>Chicago Food Inspections</h1>
+
+<%= @inspections.each do |inspection| %>
+
+  <h4><%= inspection["aka_name"] %></h4>
+  <h5><%= inspection["violations"] %></h5>
+  <h5><%= inspection["risk"] %></h5>
+  <h5><%= inspection["results"] %></h5>
+  <h5><%= inspection["address"] %></h5>
+
+<% end %>
